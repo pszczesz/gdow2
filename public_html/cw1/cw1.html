@@ -2,11 +2,40 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Ćwiczenie 1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Ćwiczenie 1</h1>
+        <p>
+            paragraf 1 ala ma kota
+        </p>
+        <p>
+            paragraf 2 ala nie ma kota
+        </p>
+        <p>
+            paragraf 3 ala miała kota
+        </p>
+        <p>
+            paragraf 4 ala miała kota
+        </p>
+        Zakupy:
+        <ol>
+            <li>Zakup 1</li>
+            <li>Komputer</li>
+            <li>chleb</li>
+            <li>bułka</li>
+            <li>zeszyt</li>
+        </ol>
+        <script type="text/javascript" >
+            var pars = document.getElementsByTagName("p");
+            var zakupy = document.getElementsByTagName("li");
+            zakupy[2].style.border = "solid thin green";
+            pars[2].innerHTML = "tu się zmieniło";
+            pars[2].style.color = "red";
+            pars[3].style.display = "none";
+           // alert(pars[0].innerHTML);
+        </script>
     </body>
 </html>
