@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Pętle w JS</h1>
+        <h2>Pętla for</h2>
+        <script type="text/javascript" >
+            for(var i=1; i <= 6 ; i++){
+                document.writeln("<h"+i+"> Nagłówek nr "+i+"</h"+i+">");
+            }
+            document.writeln("<ul>");
+            for(var i=1; i<=10;i++){
+                document.writeln("<li>Element list nr: "+i+"</li>");
+            }
+            document.writeln("</ul>");
+        </script>
+        <h2>Pętla while</h2>
+        <script type="text/javascript">
+            var suma=0;
+            while(suma<50){                
+                var losowa = Math.floor(Math.random()*10);
+                //console.log(losowa);              
+                suma += losowa; // suma = suma + losowa;
+                document.write(losowa+" ");
+            }
+            document.write("<br>suma = "+suma);
+            var dzien="";
+            //while(dzien!="piątek"){
+            //    dzien = prompt("Podaj dzień:");
+            //}
+        </script>
+        <h2>Pętla do..while(...)</h2>
+        <script type="text/javascript">
+            var losowa=0;
+            var licznik=0;
+            var suma = 0;
+            var srednia = 0;
+            var max = -1000;
+            var min = 1000;
+            do{
+                losowa = Math.floor(Math.random()*20);
+                if(losowa!==0){
+                     licznik++;
+                     suma += losowa;
+                     if(max<losowa) max = losowa;
+                     if(min>losowa) min = losowa;
+                }
+               
+                document.write(losowa+" ");
+            }while(losowa!==0);
+            document.writeln("<br>Ilość losowań: "+licznik);
+            if(licznik>0){
+                document.writeln("<p>suma = "+suma+"</p>");
+                document.writeln("<p>średnia = "+(suma/licznik).toFixed(2)+"</p>");
+                document.writeln("<p>maximum = "+max+"</p>");
+                document.writeln("<p>minimum = "+min+"</p>");
+            }else{
+               document.writeln("<p>Zbiór pusty!!!</p>"); 
+            }
+        </script>
+    </body>
+</html>
