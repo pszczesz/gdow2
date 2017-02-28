@@ -28,6 +28,21 @@
                     document.writeln("<p>NWD = "+a+"</p>");
                 }
             </script>
+            <h2>Cw3</h2>
+            <script type="text/javascript">
+                var nazwisko = prompt("|Podaj nazwisko:");
+                var pensja = parseInt(prompt("Podaj pensję:"));
+                if(isNaN(pensja)){
+                     document.write("<p>Błędne dane</p>");
+                }else{                    
+                    if(pensja>0){
+                        document.write("<p>Witaj "+nazwisko+" zarabiasz: "
+                                +pensja+"</p>");
+                    }else{
+                        document.write("<p>Pensja nie może być ujemna!!</p>");
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>
