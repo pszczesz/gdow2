@@ -1,3 +1,10 @@
 body{
     background-color: bisque;
 }
+p#first{
+    cursor: pointer;
+    
+}
+p#second{
+    cursor: pointer;
+}
