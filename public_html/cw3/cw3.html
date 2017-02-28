@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">       
+    </head>
+    <body>
+        <div id="wrapper">
+            <h2>Cw1</h2>
+            <script type="text/javascript">
+                for(var i=0; i<5 ;i++){
+                    document.writeln("<p>To jest paragraf nr: "
+                            +(i+1)+"</p>");
+                }
+            </script>
+            <h2>Cw2</h2>
+            <script type="text/javascript">
+                var a = parseInt(prompt("Podaj a:"));
+                var b = parseInt(prompt("Podaj b:"));
+                if(isNaN(a)||isNaN(b)){
+                    document.write("<p>Błędne dane</p>");
+                }else{                    
+                    while(b!==0){
+                        var temp = a;
+                        a = b;
+                        b = temp % b;
+                    }
+                    document.writeln("<p>NWD = "+a+"</p>");
+                }
+            </script>
+        </div>
+    </body>
+</html>
