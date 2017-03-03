@@ -1,6 +1,4 @@
-
 window.onload = start;
-
 function start(){
     var btn = document.getElementById("zatwierdz");
     btn.onclick = klik;
@@ -14,6 +12,5 @@ function klik(){
     }else{
         document.getElementById("wynik").innerHTML = "Dane: "
             +imie+" "+nazwisko+" pensja: "+pensja;
-    }
-    
+    }    
 }

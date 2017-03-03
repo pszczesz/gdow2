@@ -1,0 +1,12 @@
+div.line{
+    margin-bottom: 10px;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+input[type=button]{
+    padding: 6px;
+    width: 170px;
+}
