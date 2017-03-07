@@ -1,0 +1,11 @@
+img{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    border: solid thin grey;
+}
+div{
+    margin: auto;
+    text-align: center;
+}
