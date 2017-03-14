@@ -1,0 +1,11 @@
+
+input{
+    margin: 10px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding: 8px;
+    border: solid thin green;
+}
