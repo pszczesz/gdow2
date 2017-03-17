@@ -3,8 +3,14 @@ window.onload = start;
 
 function start(){
     document.getElementById("add").onclick = dodaj;
+    document.getElementById("delete").onclick = usun;
 }
-
+function usun(){
+    var tab = document.getElementById("tab");
+    if(tab.rows.length>0){
+         tab.deleteRow(-1);
+    }   
+}
 function dodaj(){
     var kol1 = document.getElementById("ko1").value;
     var kol2 = document.getElementById("ko2").value;
