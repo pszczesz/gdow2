@@ -1,7 +1,5 @@
 window.onload = start;
-
-
-function start(){
+function start(){   
     var wiosna =  [
         "green",
         "yellow",
@@ -13,7 +11,12 @@ function start(){
          "#ea794f",
          "#f7cb2c",
          "#80ed04" 
-    ];
-    //co 2s zmiana losowego koloru tła z tablicy wiosna dla obiektu body
+    ];    
+    setInterval(zmiana,3000);
+    function zmiana(){
+        // alert("dfgdfg");
+        var index = Math.floor(Math.random()*wiosna.length);
+        document.body.style.backgroundColor = wiosna[index];
+    }
 }
 
