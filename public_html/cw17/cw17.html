@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw17.css"/>
+        <script type="text/javascript" src="cw17.js"></script>        
+    </head>
+    <body>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Dane osobowe
+                    </legend>
+                    <div class="line">
+                        <label>Imię:</label>
+                        <input type="text" id="imie"/>
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label>Nazwisko:</label>
+                        <input type="text" id="nazwisko"/>
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label>Wiek:</label>
+                        <input type="text" id="wiek"/>
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label>Płeć:</label>
+                        Kobieta: <input type="radio" value="k" name="plec" checked=""/>
+                        Mężczyzna: <input type="radio" value="m" name="plec"/>
+                    </div>
+                    <div class="line">
+                        <label>Klasa:</label>
+                        <select id="klasa">
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="1D">1D</option>
+                        </select>
+                    </div>
+                     <div class="line">
+                         <label>Zainteresowania:</label><br>
+                         <label></label><input type="checkbox" name="zaint" value="muzyka"/>Muzyka<br>
+                         <label></label><input type="checkbox" name="zaint" value="film"/>Film<br>
+                         <label></label><input type="checkbox" name="zaint" value="taniec"/>Taniec<br>
+                         <label></label><input type="checkbox" name="zaint" value="sport"/>Sport<br>                       
+                    </div>
+                    <div class="line">
+                        <label></label>
+                        <input type="button" value="Wyślij" id="wyslij"/>
+                    </div>
+                </fieldset>
+            </form>
+            <div id="wynik"></div>
+        </div>
+    </body>
+</html>

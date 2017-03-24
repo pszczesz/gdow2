@@ -1,0 +1,15 @@
+div.line{
+    margin-bottom: 10px;
+}
+span.error{
+    color: red;
+}
+label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+input[type=button]{
+    padding: 5px;
+    width: 160px;
+}
