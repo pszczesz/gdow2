@@ -8,7 +8,11 @@ function start(){
    var dts = document.getElementsByTagName("dt");
    for(var i=0;i<dts.length;i++){
        dts[i].onclick = function (){
-           alert(this.innerHTML);
+          if(this.nextElementSibling.style.display === "block"){
+              this.nextElementSibling.style.display = "none";
+          }else{
+               this.nextElementSibling.style.display = "block";
+          }
        };
    }
 }
