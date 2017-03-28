@@ -1,0 +1,15 @@
+dl{
+    margin: 20px;
+    background-color: #ffccaa;
+    padding: 10px;
+}
+dt{
+    color: #ff6666;
+    border-bottom: solid 2px #ff6666;
+    width: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+dd{
+    color: #660000;
+}
