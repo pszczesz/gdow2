@@ -1,0 +1,17 @@
+h1{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid thin gray;
+    width: 500px;
+    margin-bottom: 30px;
+}
+span.info{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    vertical-align: top;
+}
+input[type=button]{
+    padding: 5px;
+    width: 150px;
+}

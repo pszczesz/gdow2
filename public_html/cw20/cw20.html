@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Kod Cezara</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw20.css"/>
+        <script type="text/javascript" src="cw20.js"></script>
+    </head>
+    <body>
+        <h1>Kod Cezara</h1>
+        <div>
+            <div>
+                <span class="info">Tekst do zakodowania:</span>
+                <textarea cols="50" rows="3" id="tekst" required=""></textarea><br>
+                <span class="info">Klucz:</span>
+                <input type="number" id="klucz" required="" min="0" max="26"/> <br>
+                <span class="info"></span>
+                <input type="button" id="koduj" value="Koduj"/>
+            </div>
+            <div id="wynik"></div>
+        </div>
+    </body>
+</html>
