@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Obiekty - wstęp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Obiekty - wstęp</h1>
+            <h3>Tworzenie obiektu w js</h3>
+            <script type="text/javascript">
+                var obiekt = {};//pusty obiekt
+                //alert(typeof(obiekt));
+                //dodawanie właściwości do obiektu (pól)
+                //console.log(obiekt);
+                obiekt.nazwa = "Mój fajny obiekt";                
+                obiekt.kolor = "żółty";
+                obiekt.ilosc = 45;
+                obiekt.Show = function (){
+                    return "nazwa: "+this.nazwa+"\nkolor: "+this.kolor
+                       +"\nilość: "+this.ilosc;
+                }
+                console.log(obiekt);
+                alert(obiekt.Show());
+            </script>
+            <h3>Ćwiczenie własne</h3>
+            <script type="text/javascript">
+                var book = {
+                    tytul: "ABC PHP",
+                    autor: "Adam Nowak",
+                    rokWydania: 2012,
+                    iloscStron: 234,
+                    czyWyp: false,
+                    Stan: function(){
+                        var s = this.czyWyp ? "tak" : "nie";
+                        return "Tytuł: "+this.tytul+"\nautor: "+this.autor
+                         +"\nrok wydania: "+this.rokWydania
+                         +"\nilość stron: "+this.iloscStron
+                         +"\nczy wypożyczona: "+s;
+                    }
+                }
+                alert(book.Stan());
+            </script>
+            <h3>Tworzenie obiektu za pomocą funkcji - konstruktor</h3>
+            <div id="wynik"></div>
+            <script type="text/javascript">
+                function Osoba(imie,nazwisko,wiek){
+                    this.imie = imie;
+                    this.nazwisko = nazwisko;
+                    this.wiek = wiek;
+                    this.PrzedstawSie = function(){
+                        return "<p>Nazywam się: "+this.imie+" "+this.nazwisko
+                                +" mój wiek: "+this.wiek;
+                    }
+                }
+                var os1 = new Osoba("Adam","Wałek",23); //tworzenie obiektu os1
+                var os2 = new Osoba("Anna","Frytrk",19); //tworzenie obiektu os2
+                document.getElementById("wynik").innerHTML = os1.PrzedstawSie()
+                    +"<br>"+os2.PrzedstawSie();
+            </script>
+        </div>
+    </body>
+</html>
