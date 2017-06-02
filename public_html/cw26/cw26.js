@@ -24,6 +24,8 @@ $(document).ready(function () {
             var czyWarto = $('input[name=warto]:checked').val();
             var p1 = new Praktyka(imie, nazwisko, opis, ocena, czyWarto);
             $("#wynik").html(p1.Show());
+        }else{
+            $("#wynik").html("");
         }
     });
     function Validate(elem) {
