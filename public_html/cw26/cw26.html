@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cw26.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="cw26.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+             <div>
+                <div class="line">
+                    <label>Imię </label>
+                    <input type="text" id="imie"/>
+                    <span class="error"></span>
+                </div>
+                 <div class="line">
+                    <label>Nazwisko </label>
+                    <input type="text" id="nazwisko"/>
+                    <span class="error"></span>
+                </div>
+                 <div class="line">
+                    <label>Opis praktyki: </label>
+                    <textarea cols="60" rows="3" id="opis"></textarea>
+                    <span class="error"></span>
+                </div>
+                 <div class="line">
+                    <label>Ocena z praktyki: </label>
+                    <select id="ocena">
+                        <option value="6">celujący</option>
+                        <option value="5">bardzo dobry</option>
+                        <option value="4">dobry</option>
+                        <option value="3">dostateczny</option>
+                        <option value="2">dopuszczający</option>
+                        <option value="1">niedostateczny</option>
+                    </select>
+                   
+                </div>
+                  <div class="line">
+                    <label>Czy było warto?: </label>
+                    tak<input name="warto" type="radio" checked="" value="tak"/>
+                   nie<input name="warto" type="radio"  value="nie"/>
+                </div>
+                 <div class="line">
+                    <label></label>
+                    <input type="button" id="dodaj" value="Dodaj"/>                    
+                </div>
+            </div>
+            <div id="wynik"></div>
+        </div>
+      
+    </body>
+</html>
