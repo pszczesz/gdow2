@@ -17,13 +17,17 @@ $(document).ready(function () {
         var nazOK = Validate($("#nazwisko"));
         var opisOK = Validate($("#opis"));
         if (imOK && nazOK && opisOK) {
-            var imie = $("#imie").val();
-            var nazwisko = $("#nazwisko").val();
-            var opis = $("#opis").val();
-            var ocena = $("#ocena").val();
-            var czyWarto = $('input[name=warto]:checked').val();
-            var p1 = new Praktyka(imie, nazwisko, opis, ocena, czyWarto);
+//            var imie = $("#imie").val();
+//            var nazwisko = $("#nazwisko").val();
+//            var opis = $("#opis").val();
+//            var ocena = $("#ocena").val();
+//            var czyWarto = $('input[name=warto]:checked').val();
+            var p1 = new Praktyka($("#imie").val(), $("#nazwisko").val(), 
+                                $("#opis").val(), $("#ocena").val(),
+                                $('input[name=warto]:checked').val());
             $("#wynik").html(p1.Show());
+        }else{
+            $("#wynik").html("");
         }
     });
     function Validate(elem) {
